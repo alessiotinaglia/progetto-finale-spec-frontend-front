@@ -1,13 +1,9 @@
-
-
-
-
-function favoritesPage() {
-  return (
-    <div>
-      <h1>Pagina dei preferiti </h1>      
-    </div>
-  )
+function FavoritesPage() {
+    return (
+        <div>
+            <h2>Pagina Preferiti</h2>
+        </div>
+    );
 }
 
-export default favoritesPage;
+export default FavoritesPage;

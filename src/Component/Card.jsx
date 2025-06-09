@@ -8,7 +8,7 @@ function Card({ data }) {
             <p className={styles.category}>Categoria: {data.category}</p>
             <Link to={`/detail/${data.id}`} className={styles.button}>
                 Dettagli
-            </Link>
+            </Link>            
         </div>
     );
 }

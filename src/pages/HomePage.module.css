@@ -22,47 +22,17 @@ body {
     font-size: 2em;
 }
 
-.controls {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 20px;
-}
-
-.input {
-    padding: 10px;
-    font-size: 14px;
-    min-width: 200px;
-    flex: 1;
-}
-
-.select {
-    padding: 10px;
-    font-size: 14px;
-    min-width: 180px;
-}
-
-.cardList {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: center;
-}
-
-.noResultsMessage {
-    width: 100%;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.noResultsMessage p {
-    font-size: 1.5em;
-}
-
 .totalCount{
     font-size: 1.3em;
     margin: 15px 0px;
     display: flex;
     justify-content: center;
 }
+
+
+
+
+
+
+
+

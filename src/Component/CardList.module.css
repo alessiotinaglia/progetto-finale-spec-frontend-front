@@ -1,0 +1,17 @@
+.noResultsMessage p {
+    font-size: 1.5em;
+}
+
+.noResultsMessage {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
