@@ -1,3 +1,14 @@
+body {
+    background-image: url('attrezzi.webd');
+}
+
+.immagine {
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -35,4 +46,23 @@
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+    justify-content: center;
+}
+
+.noResultsMessage {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.noResultsMessage p {
+    font-size: 1.5em;
+}
+
+.totalCount{
+    font-size: 1.3em;
+    margin: 15px 0px;
+    display: flex;
+    justify-content: center;
 }
