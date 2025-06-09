@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import styles from './Details.module.css'
 
 function DetailPage() {
   const { id } = useParams();
@@ -30,22 +31,29 @@ function DetailPage() {
 
   return (
     <div>
-      <h1>{record.title}</h1>
-      <img
-        src={record.images[0]}
-        alt={record.models}
-        style={{ maxWidth: '400px', height: 'auto', marginBottom: '20px' }}
-      />
-      <p><strong>Categoria:</strong> {record.category}</p>
-      <p><strong>Modello:</strong> {record.models}</p>
-      <p><strong>Anno di immatricolazione:</strong> {record.YearofRegistration}</p>
-      <p><strong>Condizione:</strong> {record.condition}</p>
-      <p><strong>Prezzo:</strong> €{record.price}</p>
-      <p><strong>Data di pubblicazione:</strong> {record.dayOfPublication}</p>
-      <p><strong>Chilometraggio:</strong> {record.mileage.toLocaleString()} km</p>
-      <p><strong>Elettrica:</strong> {record.eletric ? "Sì" : "No"}</p>
-      <p><strong>Descrizione:</strong> {record.description}</p>
+      <h1 className={styles.title}>{record.title}</h1>
+      <div className={styles.container}>
+        <img
+          src={record.images[0]}
+          alt={record.models}
+          style={{ maxWidth: '400px', height: 'auto', marginBottom: '20px' }}
+        />
+      </div>
+      <div className={styles.details}>
+        <p><strong>Categoria: </strong> {record.category}</p>
+        <p><strong>Modello: </strong> {record.models}</p>
+        <p><strong>Condizione: </strong> {record.condition}</p>
+        <p><strong>Chilometraggio: </strong> {record.mileage.toLocaleString()} km</p>
+        <p><strong>Elettrica: </strong> {record.eletric ? "Sì" : "No"}</p>
+        <p><strong>Prezzo: </strong> €{record.price}</p>
+        <p><strong>Anno di immatricolazione: </strong> {record.YearofRegistration}</p>
+        <p><strong>Data di pubblicazione: </strong> {record.dayOfPublication}</p>
+        <p><strong>Descrizione: </strong> {record.description}</p>
+      </div>
+
+
     </div>
+
   );
 }
 

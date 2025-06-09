@@ -1,0 +1,28 @@
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.details{
+    padding: 0px 20px;
+    
+    
+}
+
+.details p{
+    padding-bottom: 7px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+}
+.details p strong{
+    margin-right: 5px;
+}
