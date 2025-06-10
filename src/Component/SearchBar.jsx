@@ -1,6 +1,27 @@
+import { useEffect, useState } from 'react';
 import styles from './SearchBar.module.css';
 
-function SearchBar({ filterTitle, setFilterTitle, filterCategory, setFilterCategory, alphabeticalSorting, setAlphabeticalSorting }) {
+function SearchBar({ records, onSearch }) {
+    const [filterTitle, setFilterTitle] = useState('');
+    const [filterCategory, setFilterCategory] = useState('');
+    const [alphabeticalSorting, setAlphabeticalSorting] = useState('');
+
+    useEffect(() => {
+        let filtered = records.filter((record) => {
+            const matchesTitle = record.title.toLowerCase().includes(filterTitle.toLowerCase());
+            const matchesCategory = filterCategory === '' || record.category === filterCategory;
+            return matchesTitle && matchesCategory;
+        });
+
+        if (alphabeticalSorting === 'asc') {
+            filtered.sort((a, b) => a.title.localeCompare(b.title));
+        } else if (alphabeticalSorting === 'desc') {
+            filtered.sort((a, b) => b.title.localeCompare(a.title));
+        }
+
+        onSearch(filtered);
+    }, [filterTitle, filterCategory, alphabeticalSorting, records, onSearch]);
+
     return (
         <div className={styles.controls}>
             <input
@@ -19,7 +40,7 @@ function SearchBar({ filterTitle, setFilterTitle, filterCategory, setFilterCateg
                 <option value="auto">Auto</option>
                 <option value="moto">Moto</option>
                 <option value="monopattini">Monopattini</option>
-                <option value="bici">bici</option>
+                <option value="bici">Bici</option>
             </select>
             <select
                 className={styles.select}

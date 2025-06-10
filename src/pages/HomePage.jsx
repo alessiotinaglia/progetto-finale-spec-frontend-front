@@ -1,57 +1,27 @@
 import { useState, useContext } from 'react';
 import { GlobalContext } from '../context/GlobalContext';
 import SearchBar from '../Component/SearchBar';
-import styles from './HomePage.module.css';
 import CardList from '../Component/CardList';
-
+import styles from './HomePage.module.css';
 
 function HomePage() {
   const { records } = useContext(GlobalContext);
-
-  const [filterTitle, setFilterTitle] = useState('');
-  const [filterCategory, setFilterCategory] = useState('');
-  const [alphabeticalSorting, setAlphabeticalSorting] = useState('');
-
-  const filteredRecords = records.filter((record) => {
-    const matchesTitle = record.title.toLowerCase().includes(filterTitle.toLowerCase());
-    const matchesCategory = filterCategory === '' || record.category === filterCategory;
-    return matchesTitle && matchesCategory;
-  });
-
-  const sortedRecords = [...filteredRecords].sort((a, b) => {
-    if (alphabeticalSorting === 'asc') {
-      return a.title.localeCompare(b.title);
-    } else if (alphabeticalSorting === 'desc') {
-      return b.title.localeCompare(a.title);
-    } else {
-      return 0;
-    }
-  });
+  const [filteredRecords, setFilteredRecords] = useState(records);
 
   return (
-    <>
-      
-      <div className={styles.immagine}>
-        <div className={styles.container}>
-          <div>
-            <h2 className={styles.heading}>Tutti i Mezzi di Trasporto</h2>
+    <div className={styles.immagine}>
+      <div className={styles.container}>
+        <h2 className={styles.heading}>Tutti i Mezzi di Trasporto</h2>
 
-            {/* utilizzo componente search */}
-            <SearchBar
-              filterTitle={filterTitle}
-              setFilterTitle={setFilterTitle}
-              filterCategory={filterCategory}
-              setFilterCategory={setFilterCategory}
-              alphabeticalSorting={alphabeticalSorting}
-              setAlphabeticalSorting={setAlphabeticalSorting}
-            />
+        <SearchBar records={records} onSearch={setFilteredRecords} />
 
-            {/* utilizzo componente lista delle card + formattazione card */}
-            <CardList records={sortedRecords} />
-          </div>
-        </div>
+        <p className={styles.totalCount}>
+          Risultati trovati: {filteredRecords.length}
+        </p>
+
+        <CardList records={filteredRecords} />
       </div>
-    </>
+    </div>
   );
 }
 

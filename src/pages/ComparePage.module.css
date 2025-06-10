@@ -1,0 +1,29 @@
+
+
+.compareContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.column {
+    width: 48%;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+.titleSecondary{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.totalCount{
+    font-size: 1.3em;
+    margin: 15px 0px;
+    display: flex;
+    justify-content: center;
+}
