@@ -4,6 +4,7 @@ import SearchBar from '../Component/SearchBar';
 import styles from './HomePage.module.css';
 import CardList from '../Component/CardList';
 
+
 function HomePage() {
   const { records } = useContext(GlobalContext);
 
@@ -28,26 +29,29 @@ function HomePage() {
   });
 
   return (
-    <div className={styles.immagine}>
-      <div className={styles.container}>
-        <div>
-          <h2 className={styles.heading}>Tutti i Mezzi di Trasporto</h2>
+    <>
+      
+      <div className={styles.immagine}>
+        <div className={styles.container}>
+          <div>
+            <h2 className={styles.heading}>Tutti i Mezzi di Trasporto</h2>
 
-          {/* utilizzo componente search */}
-          <SearchBar
-            filterTitle={filterTitle}
-            setFilterTitle={setFilterTitle}
-            filterCategory={filterCategory}
-            setFilterCategory={setFilterCategory}
-            alphabeticalSorting={alphabeticalSorting}
-            setAlphabeticalSorting={setAlphabeticalSorting}
-          />
+            {/* utilizzo componente search */}
+            <SearchBar
+              filterTitle={filterTitle}
+              setFilterTitle={setFilterTitle}
+              filterCategory={filterCategory}
+              setFilterCategory={setFilterCategory}
+              alphabeticalSorting={alphabeticalSorting}
+              setAlphabeticalSorting={setAlphabeticalSorting}
+            />
 
-          {/* utilizzo componente lista delle card + formattazione card */}
-          <CardList records={sortedRecords} />
+            {/* utilizzo componente lista delle card + formattazione card */}
+            <CardList records={sortedRecords} />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

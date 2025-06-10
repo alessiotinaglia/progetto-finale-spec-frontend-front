@@ -1,59 +1,47 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import styles from './Details.module.css'
+import { GlobalContext } from '../context/GlobalContext';
+import styles from './DetailsPage.module.css';
 
 function DetailPage() {
+  
   const { id } = useParams();
-  const [record, setRecord] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const { recordDetails, getRecordDetails, loading, error } = useContext(GlobalContext);
 
   useEffect(() => {
-    fetch(`http://localhost:3001/transports/${id}`)
-      .then((res) => {
-        if (!res.ok) throw new Error('Errore nella risposta');
-        return res.json();
-      })
-      .then((data) => {
-        setRecord(data.transport);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error('Errore nel fetch per ID:', err);
-        setError(err.message);
-        setLoading(false);
-      });
+    getRecordDetails(id);
   }, [id]);
 
   if (loading) return <p>Caricamento...</p>;
   if (error) return <p>Errore: {error}</p>;
-  if (!record) return <p>Nessun dato trovato</p>;
+  if (!recordDetails) return <p>Nessun dato trovato</p>;
 
   return (
     <div>
-      <h1 className={styles.title}>{record.title}</h1>
-      <div className={styles.container}>
-        <img
-          src={record.images[0]}
-          alt={record.models}
-          style={{ maxWidth: '400px', height: 'auto', marginBottom: '20px' }}
-        />
+      <h1 className={styles.title}>{recordDetails.transport.title || "Titolo non disponibile"}</h1>
+      <div className={styles.card}>
+        <div className={styles.imageContainer}>
+          <div>
+            <img
+              src={recordDetails.transport.images?.[0] || 'placeholder.jpg'}
+              alt={recordDetails.transport.models || "Modello non disponibile"}
+              className={styles.image}
+            />
+          </div>
+        </div>
+        <div className={styles.details}>
+          <p><strong>Categoria: </strong> {recordDetails.transport.category || "Non disponibile"}</p>
+          <p><strong>Modello: </strong> {recordDetails.transport.models || "Non disponibile"}</p>
+          <p><strong>Condizione: </strong> {recordDetails.transport.condition || "Non disponibile"}</p>
+          <p><strong>Chilometraggio: </strong> {recordDetails.transport.mileage?.toLocaleString() || "Non disponibile"} km</p>
+          <p><strong>Elettrica: </strong> {recordDetails.transport.electric ? "Sì" : "No"}</p>
+          <p><strong>Prezzo: </strong> €{recordDetails.transport.price || "Non disponibile"}</p>
+          <p><strong>Anno di immatricolazione: </strong> {recordDetails.transport.yearOfRegistration || "Non disponibile"}</p>
+          <p><strong>Data di pubblicazione: </strong> {recordDetails.transport.dayOfPublication || "Non disponibile"}</p>
+          <p><strong>Descrizione: </strong> {recordDetails.transport.description || "Non disponibile"}</p>
+        </div>
       </div>
-      <div className={styles.details}>
-        <p><strong>Categoria: </strong> {record.category}</p>
-        <p><strong>Modello: </strong> {record.models}</p>
-        <p><strong>Condizione: </strong> {record.condition}</p>
-        <p><strong>Chilometraggio: </strong> {record.mileage.toLocaleString()} km</p>
-        <p><strong>Elettrica: </strong> {record.eletric ? "Sì" : "No"}</p>
-        <p><strong>Prezzo: </strong> €{record.price}</p>
-        <p><strong>Anno di immatricolazione: </strong> {record.YearofRegistration}</p>
-        <p><strong>Data di pubblicazione: </strong> {record.dayOfPublication}</p>
-        <p><strong>Descrizione: </strong> {record.description}</p>
-      </div>
-
-
     </div>
-
   );
 }
 

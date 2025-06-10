@@ -12,8 +12,8 @@ function CardList({ records }) {
 
     return (
         <div className={styles.cardList}>
-            {records.map((record) => (
-                <Card key={record.id} data={record} />
+            {records?.map((record) => (
+                <Card key={record.id} data={record} />                
             ))}
         </div>
     );
