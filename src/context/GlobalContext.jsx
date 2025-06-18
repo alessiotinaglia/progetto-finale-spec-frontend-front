@@ -7,6 +7,7 @@ export const GlobalProvider = ({ children }) => {
     const [recordDetails, setRecordDetails] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
+    const [favorites, setFavorites] = useState([]);
 
     useEffect(() => {
         const url = 'http://localhost:3001/transports';
@@ -23,7 +24,17 @@ export const GlobalProvider = ({ children }) => {
             });
     }, []);
 
-    const getRecordDetails = async (id) => {        
+    const toggleFavorite = (record) => {
+        setFavorites((prev) => {
+            if (prev.find((fav) => fav.id === record.id)) {
+                return prev.filter((fav) => fav.id !== record.id);
+            } else {
+                return [...prev, record];
+            }
+        });
+    };
+
+    const getRecordDetails = async (id) => {
         setLoading(true);
         setError(null);
         try {
@@ -32,6 +43,7 @@ export const GlobalProvider = ({ children }) => {
             const data = await response.json();
             console.log('Dettagli ricevuti:', data);
             setRecordDetails(data);
+            return data;
         } catch (error) {
             console.error('Errore nel fetch per ID:', error);
             setError(error.message);
@@ -48,6 +60,8 @@ export const GlobalProvider = ({ children }) => {
             getRecordDetails,
             loading,
             error,
+            favorites,
+            toggleFavorite,
         }}>
             {children}
         </GlobalContext.Provider>

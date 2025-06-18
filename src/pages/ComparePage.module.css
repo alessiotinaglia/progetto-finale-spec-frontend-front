@@ -1,5 +1,3 @@
-
-
 .compareContainer {
     display: flex;
     justify-content: space-between;
@@ -8,22 +6,57 @@
 
 .column {
     width: 48%;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.title{
-    display: flex;
-    justify-content: center;
-    margin: 25px;
-}
-.titleSecondary{
+.titleSecondary {
     display: flex;
     justify-content: center;
     margin: 10px;
 }
 
-.totalCount{
+.totalCount {
     font-size: 1.3em;
     margin: 15px 0px;
     display: flex;
     justify-content: center;
+}
+
+.card {
+    position: relative;
+    width: 50%;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom: 5px;
+}
+
+.category {
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin: 0 auto;
+    width: 30%;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
 }

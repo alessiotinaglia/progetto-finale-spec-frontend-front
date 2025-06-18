@@ -1,11 +1,7 @@
-body {
-    background-image: url('attrezzi.webd');
-}
-
 .immagine {
-    background-image: url('');
+    /* background-image: url('https://www.deaworklab.it/it/computedimage/le-officine-ferrari-e-maserati-in-francia-scelgono-dea.i1774-kOdsSKD-l1.jpg'); */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
@@ -22,17 +18,9 @@ body {
     font-size: 2em;
 }
 
-.totalCount{
+.totalCount {
     font-size: 1.3em;
     margin: 15px 0px;
     display: flex;
     justify-content: center;
 }
-
-
-
-
-
-
-
-

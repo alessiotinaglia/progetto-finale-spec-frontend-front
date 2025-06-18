@@ -1,35 +1,107 @@
-import { useContext, useState } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { GlobalContext } from '../context/GlobalContext';
 import SearchBar from '../Component/SearchBar';
-import CardList from '../Component/CardList';
+import TransportDetails from '../Component/TransportDetails';
 import styles from './ComparePage.module.css';
+import FavoriteStar from '../Component/FavoriteStar';
 
 function ComparePage() {
-    const { records } = useContext(GlobalContext);
+    const { records, getRecordDetails } = useContext(GlobalContext);
 
-    const [leftRecords, setLeftRecords] = useState(records);
-    const [rightRecords, setRightRecords] = useState(records);
+    const [leftRecords, setLeftRecords] = useState(records || []);
+    const [rightRecords, setRightRecords] = useState(records || []);
+    const [expandedLeftId, setExpandedLeftId] = useState(null);
+    const [expandedRightId, setExpandedRightId] = useState(null);
+    const [leftDetails, setLeftDetails] = useState(null);
+    const [rightDetails, setRightDetails] = useState(null);
+
+    // Quando records cambia di valori da dx/str
+    useEffect(() => {
+        if (Array.isArray(records)) {
+            setLeftRecords(records);
+            setRightRecords(records);
+        } else {
+            setLeftRecords([]);
+            setRightRecords([]);
+        }
+    }, [records]);
+
+
+    const renderDetails = (details) => {
+        if (!details) return <p>Errore nel caricamento del dettaglio.</p>;
+        return <TransportDetails transport={details.transport} />;
+    };
 
     return (
         <>
-            <h1 className={styles.title}>Confronta Prodotti</h1>
+            <h1 style={{ textAlign: 'center', fontSize: '2.5em', margin: 30 }}>Confronta Prodotti</h1>
             <div className={styles.compareContainer}>
                 <div className={styles.column}>
-                    <h2 className={styles.titleSecondary}>Prodotto 1 </h2>
-                    <SearchBar records={records} onSearch={setLeftRecords} />
-                    <p className={styles.totalCount}>
-                        Risultati trovati: {leftRecords.length}
-                    </p>
-                    <CardList records={leftRecords} />
+                    {!expandedLeftId && (
+                        <>
+                            <h2 className={styles.titleSecondary}>Prodotto 1</h2>
+                            <SearchBar records={records} onSearch={setLeftRecords} />
+                            <p className={styles.totalCount}>
+                                Risultati trovati: {leftRecords.length}
+                            </p>
+                        </>
+                    )}
+                    {expandedLeftId
+                        ? renderDetails(leftDetails)
+                        : leftRecords.map((car) => (
+                            <div className={styles.container} key={car.id}>
+                                <div className={styles.card}>
+                                    <FavoriteStar data={car} />
+                                    <h3 className={styles.title}>{car.title}</h3>
+                                    <p className={styles.category}>Categoria: {car.category}</p>
+                                    <button
+                                        className={styles.button}
+                                        onClick={async () => {
+                                            setExpandedLeftId(car.id);
+                                            const data = await getRecordDetails(car.id);
+                                            setLeftDetails(data);
+                                        }}
+                                    >
+                                        Dettaglio
+                                    </button>
+                                </div>
+                            </div>
+                        ))
+                    }
                 </div>
 
                 <div className={styles.column}>
-                    <h2 className={styles.titleSecondary}>Prodotto 2</h2>
-                    <SearchBar records={records} onSearch={setRightRecords} />
-                    <p className={styles.totalCount}>
-                        Risultati trovati: {leftRecords.length}
-                    </p>
-                    <CardList records={rightRecords} />
+                    {!expandedRightId && (
+                        <>
+                            <h2 className={styles.titleSecondary}>Prodotto 2</h2>
+                            <SearchBar records={records} onSearch={setRightRecords} />
+                            <p className={styles.totalCount}>
+                                Risultati trovati: {rightRecords.length}
+                            </p>
+                        </>
+                    )}
+                    {expandedRightId
+                        ? renderDetails(rightDetails)
+                        : rightRecords.map((car) => (
+                            <div className={styles.container} key={car.id}>
+                                <div className={styles.card}>
+                                    <FavoriteStar data={car} />
+                                    <h3 className={styles.title}>{car.title}</h3>
+                                    <p className={styles.category}>Categoria: {car.category}</p>
+                                    <button
+                                        className={styles.button}
+                                        onClick={async () => {
+                                            setExpandedRightId(car.id);
+                                            const data = await getRecordDetails(car.id);
+                                            setRightDetails(data);
+                                        }}
+                                    >
+                                        Dettaglio
+                                    </button>
+                                </div>
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
         </>
