@@ -1,0 +1,632 @@
+[
+  {
+    "title": "Fiat Panda 1.0 FireFly S&S Hybrid City Life",
+    "category": "auto",
+    "models": "Fiat Panda",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 10500,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://www.patentati.it/listini-auto/foto/fiat-panda-40029_hatchback-5-doors-fiat-panda-2021-side-front.jpg"
+    ],
+    "description": "Auto compatta e versatile, ideale per la città.",
+    "eletric": false,
+    "id": 1,
+    "createdAt": "2025-06-09T13:59:13.661Z",
+    "updatedAt": "2025-06-09T13:59:13.661Z"
+  },
+  {
+    "title": "Toyota C-HR 1.8 Hybrid E-CVT Business",
+    "category": "auto",
+    "models": "Toyota C-HR",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 19900,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://images.toyota-europe.com/it/product-token/c07b25d0-bddd-4481-aae4-a310b7bb1081/vehicle/781aad78-9c0b-430b-9fcb-c53ca9d5a5e8/width/331/height/131/scale-mode/1/padding/0/background-colour/FFFFFF/image-quality/75/day-exterior-3_209.jpg"
+    ],
+    "description": "SUV ibrido con design moderno e tecnologia avanzata.",
+    "eletric": true,
+    "id": 2,
+    "createdAt": "2025-06-09T14:01:46.531Z",
+    "updatedAt": "2025-06-09T14:01:46.531Z"
+  },
+  {
+    "title": "BMW R 1250 GS",
+    "category": "moto",
+    "models": "BMW R 1250 GS",
+    "YearofRegistration": 2021,
+    "condition": "usato",
+    "price": 17800,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 39000,
+    "images": [
+      "https://images5.1000ps.net/images_bikekat/2021/7-BMW/9500-R_1250_GS/005-637375726896123457-bmw-r-1250-gs.jpg?format=webp&quality=80&width=1200&height=790&bgcolor=rgba_39_42_44_0&mode=pad"
+    ],
+    "description": "Moto da viaggio con equipaggiamento completo.",
+    "eletric": false,
+    "id": 3,
+    "createdAt": "2025-06-09T14:02:52.594Z",
+    "updatedAt": "2025-06-09T14:02:52.594Z"
+  },
+  {
+    "title": "Kawasaki Versys 650 Tourer Plus",
+    "category": "moto",
+    "models": "Kawasaki Versys 650",
+    "YearofRegistration": 2021,
+    "condition": "usato",
+    "price": 7490,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 7020,
+    "images": [
+      "https://bmroma.com/cdn/shop/files/versys-650-my25-348127.png?v=1737117547"
+    ],
+    "description": "Moto versatile per turismo e uso quotidiano.",
+    "eletric": false,
+    "id": 4,
+    "createdAt": "2025-06-09T14:03:33.855Z",
+    "updatedAt": "2025-06-09T14:03:33.855Z"
+  },
+  {
+    "title": "Yamaha Tricity 125",
+    "category": "moto",
+    "models": "Yamaha Tricity 125",
+    "YearofRegistration": 2023,
+    "condition": "usato",
+    "price": 3700,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 2395,
+    "images": [
+      "https://www.team-menduni.com/12268-big_default/2cmfvsp00000-pack-sport-pour-tricity-125.jpg"
+    ],
+    "description": "Scooter a tre ruote per una guida stabile e sicura.",
+    "eletric": false,
+    "id": 5,
+    "createdAt": "2025-06-09T14:04:31.035Z",
+    "updatedAt": "2025-06-09T14:04:31.035Z"
+  },
+  {
+    "title": "Pinarello Granger X5",
+    "category": "bici",
+    "models": "Pinarello Granger X5",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 3600,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://pinarello.com/storage/Variant/10779d1245a2bcbc7f16d40b0b9a92c2.png"
+    ],
+    "description": "Bicicletta gravel di alta gamma per avventure su strada e sterrato.",
+    "eletric": false,
+    "id": 6,
+    "createdAt": "2025-06-09T14:05:07.765Z",
+    "updatedAt": "2025-06-09T14:05:07.765Z"
+  },
+  {
+    "title": "Trek Dual Sport+ 2",
+    "category": "bici",
+    "models": "Trek Dual Sport+ 2",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 1800,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5dbyOkqQ2lN-kxFGhGOw15ZQBhKLxEk2w-w&s"
+    ],
+    "description": "Bicicletta ibrida elettrica per percorsi misti.",
+    "eletric": true,
+    "id": 7,
+    "createdAt": "2025-06-09T14:06:25.075Z",
+    "updatedAt": "2025-06-09T14:06:25.075Z"
+  },
+  {
+    "title": "Bici pieghevole tipo Graziella",
+    "category": "bici",
+    "models": "Bici pieghevole tipo Graziella",
+    "YearofRegistration": 2025,
+    "condition": "usato",
+    "price": 50,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://motociclitessari.it/assets/uploads/2024/05/100_1416-Photoroom.png-Photoroom.png"
+    ],
+    "description": "Bicicletta compatta e pratica per la città.",
+    "eletric": false,
+    "id": 8,
+    "createdAt": "2025-06-09T14:07:03.504Z",
+    "updatedAt": "2025-06-09T14:07:03.504Z"
+  },
+  {
+    "title": "Bici vintage uomo Mondiale",
+    "category": "bici",
+    "models": "Bici vintage uomo Mondiale",
+    "YearofRegistration": 2025,
+    "condition": "usato",
+    "price": 80,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://engwe.com/cdn/shop/files/20_2c2115a8-a5b0-40d9-a94f-00482df99c86.png?v=1736216251&width=1214"
+    ],
+    "description": "Bicicletta d'epoca in buone condizioni.",
+    "eletric": false,
+    "id": 9,
+    "createdAt": "2025-06-09T14:08:21.571Z",
+    "updatedAt": "2025-06-09T14:08:21.571Z"
+  },
+  {
+    "title": "Bici Bmx bambino Btwin WIPE 500",
+    "category": "bici",
+    "models": "Bici Bmx bambino Btwin WIPE 500",
+    "YearofRegistration": 2025,
+    "condition": "usato",
+    "price": 190,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://contents.mediadecathlon.com/p2737386/k$80eb70fac83dd6b4c0de0099cf401d42/picture.jpg"
+    ],
+    "description": "Bicicletta BMX per bambini, ruote da 20 pollici.",
+    "eletric": false,
+    "id": 10,
+    "createdAt": "2025-06-09T14:09:23.773Z",
+    "updatedAt": "2025-06-09T14:09:23.773Z"
+  },
+  {
+    "title": "Yamaha FZ8",
+    "category": "moto",
+    "models": "Yamaha FZ8",
+    "YearofRegistration": 2012,
+    "condition": "usato",
+    "price": 4500,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 39000,
+    "images": [
+      "https://img.stcrm.it/images/302192/HOR_STD/800x/swap.jpeg"
+    ],
+    "description": "Moto naked con motore 800cc, ideale per uso quotidiano.",
+    "eletric": false,
+    "id": 11,
+    "createdAt": "2025-06-09T14:09:51.725Z",
+    "updatedAt": "2025-06-09T14:09:51.725Z"
+  },
+  {
+    "title": "KTM 690 Enduro R",
+    "category": "moto",
+    "models": "KTM 690 Enduro R",
+    "YearofRegistration": 2014,
+    "condition": "usato",
+    "price": 4790,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 51000,
+    "images": [
+      "https://www.dam-racing.be/cdn/shop/products/KTM690ENDUROR2.png?v=1680815693&width=1445"
+    ],
+    "description": "Moto da enduro con motore potente e sospensioni di qualità.",
+    "eletric": false,
+    "id": 12,
+    "createdAt": "2025-06-09T14:10:22.211Z",
+    "updatedAt": "2025-06-09T14:10:22.211Z"
+  },
+  {
+    "title": "Honda SH 300 i",
+    "category": "moto",
+    "models": "Honda SH 300 i",
+    "YearofRegistration": 2010,
+    "condition": "usato",
+    "price": 2190,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 47050,
+    "images": [
+      "https://img.stcrm.it/images/305150/HOR_STD/800x/swap.jpeg"
+    ],
+    "description": "Scooter elegante e affidabile per la città.",
+    "eletric": false,
+    "id": 13,
+    "createdAt": "2025-06-09T14:11:18.037Z",
+    "updatedAt": "2025-06-09T14:11:18.037Z"
+  },
+  {
+    "title": "Yamaha Tracer 7",
+    "category": "moto",
+    "models": "Yamaha Tracer 7",
+    "YearofRegistration": 2021,
+    "condition": "usato",
+    "price": 7500,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 9700,
+    "images": [
+      "https://img.stcrm.it/images/41339345/HOR_STD/800x/2024-yamaha-mt07tr-eu-midnight-black-360-degrees-001-03.jpeg"
+    ],
+    "description": "Moto sport-touring con ottime prestazioni e comfort.",
+    "eletric": false,
+    "id": 14,
+    "createdAt": "2025-06-09T14:11:42.612Z",
+    "updatedAt": "2025-06-09T14:11:42.612Z"
+  },
+  {
+    "title": "Kawasaki Z 900",
+    "category": "moto",
+    "models": "Kawasaki Z 900",
+    "YearofRegistration": 2017,
+    "condition": "usato",
+    "price": 6900,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 23500,
+    "images": [
+      "https://img.stcrm.it/images/7622236/HOR_STD/800x/kawasaki-z-900-2017-01.png"
+    ],
+    "description": "Moto naked con motore potente e design aggressivo.",
+    "eletric": false,
+    "id": 15,
+    "createdAt": "2025-06-09T14:12:05.930Z",
+    "updatedAt": "2025-06-09T14:12:05.930Z"
+  },
+  {
+    "title": "Xiaomi Mi Electric Scooter 3",
+    "category": "monopattini",
+    "models": "Xiaomi Mi Electric Scooter 3",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 399,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://i01.appmifile.com/webfile/globalimg/products/m/mi-electric-scooter-3/section2.png"
+    ],
+    "description": "Monopattino elettrico leggero e potente, ideale per la città.",
+    "eletric": true,
+    "id": 16,
+    "createdAt": "2025-06-09T14:16:51.187Z",
+    "updatedAt": "2025-06-09T14:16:51.187Z"
+  },
+  {
+    "title": "Segway Ninebot MAX G30",
+    "category": "monopattini",
+    "models": "Segway Ninebot MAX G30",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 799,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://eco-motori.it/wp-content/uploads/2020/02/max-g30-new-model-monopattino-elettrico.jpg"
+    ],
+    "description": "Monopattino elettrico con lunga autonomia e comfort superiore.",
+    "eletric": true,
+    "id": 17,
+    "createdAt": "2025-06-09T14:17:12.367Z",
+    "updatedAt": "2025-06-09T14:17:12.367Z"
+  },
+  {
+    "title": "Ninebot KickScooter Air T15",
+    "category": "monopattini",
+    "models": "Ninebot KickScooter Air T15",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 599,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0552/0883/7292/products/1_11acc246-3745-41af-90f2-739a3227844c.jpg?v=1646650040"
+    ],
+    "description": "Monopattino elettrico ultra leggero e portatile.",
+    "eletric": true,
+    "id": 18,
+    "createdAt": "2025-06-09T14:17:45.457Z",
+    "updatedAt": "2025-06-09T14:17:45.457Z"
+  },
+  {
+    "title": "E-Twow Booster V",
+    "category": "monopattini",
+    "models": "E-Twow Booster V",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 499,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://voltride.com/wp-content/uploads/2020/03/687_5daeebe456a5b1.37107846_e-twow_s2_booster_v_must.jpg"
+    ],
+    "description": "Monopattino elettrico compatto e potente.",
+    "eletric": true,
+    "id": 19,
+    "createdAt": "2025-06-09T14:18:38.006Z",
+    "updatedAt": "2025-06-09T14:18:38.006Z"
+  },
+  {
+    "title": "Inokim Light 2",
+    "category": "monopattini",
+    "models": "Inokim Light 2",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 649,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://inokim.com/cdn/shop/files/light_aa258760-39df-48ff-b746-3f36c6ff7484.png?v=1746305310"
+    ],
+    "description": "Monopattino elettrico con design elegante e prestazioni elevate.",
+    "eletric": true,
+    "id": 20,
+    "createdAt": "2025-06-09T14:20:00.190Z",
+    "updatedAt": "2025-06-09T14:20:00.190Z"
+  },
+  {
+    "title": "Micro Merlin",
+    "category": "monopattini",
+    "models": "Micro Merlin",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 699,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://bikeshop-engl.it/images/product_images/original_images/46948_0.jpg"
+    ],
+    "description": "Monopattino elettrico con sospensioni per un comfort superiore.",
+    "eletric": true,
+    "id": 21,
+    "createdAt": "2025-06-09T14:20:23.932Z",
+    "updatedAt": "2025-06-09T14:20:23.932Z"
+  },
+  {
+    "title": "Fiat 500 Hybrid",
+    "category": "auto",
+    "models": "Fiat 500",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 14900,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://i.ytimg.com/vi/ZMnmPytm31M/sddefault.jpg"
+    ],
+    "description": "Iconica city car con motorizzazione ibrida e design rinnovato.",
+    "eletric": false,
+    "id": 22,
+    "createdAt": "2025-06-09T14:22:48.937Z",
+    "updatedAt": "2025-06-09T14:22:48.937Z"
+  },
+  {
+    "title": "Volkswagen Golf 8 1.5 TSI Life",
+    "category": "auto",
+    "models": "Volkswagen Golf",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 24900,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://cdn.motor1.com/images/mgl/Ooej1A/1599:0:5464:5464/volkswagen-golf-2024-restyling---foto.webp"
+    ],
+    "description": "Compatta elegante con motore benzina efficiente e tecnologia avanzata.",
+    "eletric": false,
+    "id": 23,
+    "createdAt": "2025-06-09T14:23:51.078Z",
+    "updatedAt": "2025-06-09T14:23:51.078Z"
+  },
+  {
+    "title": "Audi A3 Sportback 35 TFSI",
+    "category": "auto",
+    "models": "Audi A3",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 28900,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://cdn-datak.motork.net/configurator-cover/cars/it/1600/AUDI/A3-SPORTBACK/44134_HATCHBACK-5-DOORS/audi-a3-sportback-cover.jpg"
+    ],
+    "description": "Berline compatta premium con interni raffinati e motore reattivo.",
+    "eletric": false,
+    "id": 24,
+    "createdAt": "2025-06-09T14:24:53.482Z",
+    "updatedAt": "2025-06-09T14:24:53.482Z"
+  },
+  {
+    "title": "BMW Serie 1 118i",
+    "category": "auto",
+    "models": "BMW Serie 1",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 31900,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://media.drive.com.au/obj/tx_q:50,rs:auto:1920:1080:1/driveau/upload/cms/uploads/a7511779-73d9-51c0-9e0d-d18caa450000"
+    ],
+    "description": "Hatchback sportiva con trazione posteriore e tecnologia all'avanguardia.",
+    "eletric": false,
+    "id": 25,
+    "createdAt": "2025-06-09T14:25:33.984Z",
+    "updatedAt": "2025-06-09T14:25:33.984Z"
+  },
+  {
+    "title": "Mercedes-Benz Classe A 180",
+    "category": "auto",
+    "models": "Mercedes-Benz Classe A",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 33900,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://images3.kingautos.net/model/2022/46/lqCTnZqgo7CvxcCsjq4-834x470.webp"
+    ],
+    "description": "Compatta premium con interni lussuosi e motore efficiente.",
+    "eletric": false,
+    "id": 26,
+    "createdAt": "2025-06-09T14:26:07.597Z",
+    "updatedAt": "2025-06-09T14:26:07.597Z"
+  },
+  {
+    "title": "Peugeot 208 Allure",
+    "category": "auto",
+    "models": "Peugeot 208",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 17900,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://photoref.carboatservices.fr/UEVVR0VPVA==/MjA4/18e87001f99217891cfc00a13a41f4fa/Mg==/4b8a9285e3b51d77e9e6f9887c0427f2"
+    ],
+    "description": "City car elegante con motore efficiente e tecnologia moderna.",
+    "eletric": false,
+    "id": 27,
+    "createdAt": "2025-06-09T14:26:36.058Z",
+    "updatedAt": "2025-06-09T14:26:36.058Z"
+  },
+  {
+    "title": "Renault Clio E-Tech Hybrid",
+    "category": "auto",
+    "models": "Renault Clio",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 18900,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://cdn.group.renault.com/ren/master/renault-new-cars/product-plans/clio-bja-ph2/modales/services-finance/clio-bja-ph2-004-services-finance.jpg.ximg.small.jpg/61b38194fe.jpg"
+    ],
+    "description": "Compatta ibrida con consumi ridotti e design accattivante.",
+    "eletric": true,
+    "id": 28,
+    "createdAt": "2025-06-09T14:26:59.406Z",
+    "updatedAt": "2025-06-09T14:26:59.406Z"
+  },
+  {
+    "title": "Opel Corsa GS Line",
+    "category": "auto",
+    "models": "Opel Corsa",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 16900,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://carvo.ch/assets/images/models/md-478/original/opel-corsa-gs-line-130ps-tuM9h3z2CE.png"
+    ],
+    "description": "City car sportiva con motore efficiente e dotazioni complete.",
+    "eletric": false,
+    "id": 29,
+    "createdAt": "2025-06-09T14:27:29.587Z",
+    "updatedAt": "2025-06-09T14:27:29.587Z"
+  },
+  {
+    "title": "Ford Fiesta Titanium",
+    "category": "auto",
+    "models": "Ford Fiesta",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 15900,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://i.ytimg.com/vi/WAGpm2RRu-Q/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA2M6HOf_K9dJBY9G8AmMaPn4AKOA"
+    ],
+    "description": "Compatta versatile con motore benzina e tecnologia avanzata.",
+    "eletric": false,
+    "id": 30,
+    "createdAt": "2025-06-09T14:28:03.837Z",
+    "updatedAt": "2025-06-09T14:28:03.837Z"
+  },
+  {
+    "title": "Toyota Yaris GR Sport",
+    "category": "auto",
+    "models": "Toyota Yaris",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 22900,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://www.lojack.it/wp-content/uploads/2025/04/Toyota-GR-Yaris-2025.docx.jpg"
+    ],
+    "description": "Versione sportiva della Yaris con design dinamico e motore potente.",
+    "eletric": false,
+    "id": 31,
+    "createdAt": "2025-06-09T14:28:42.852Z",
+    "updatedAt": "2025-06-09T14:28:42.852Z"
+  },
+  {
+    "title": "Honda Civic e:HEV",
+    "category": "auto",
+    "models": "Honda Civic",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 24900,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://www.onlineauto.com.au/media/images/articles/webp/2025-honda-civic-ehev-lx-front.webp"
+    ],
+    "description": "Berline compatta ibrida con interni spaziosi e tecnologia avanzata.",
+    "eletric": true,
+    "id": 32,
+    "createdAt": "2025-06-09T14:30:08.511Z",
+    "updatedAt": "2025-06-09T14:30:08.511Z"
+  },
+  {
+    "title": "Mazda 3 Skyactiv-X",
+    "category": "auto",
+    "models": "Mazda 3",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 26900,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://media-assets.mazda.eu/image/upload/q_auto,f_auto,w_768/mazdait/globalassets/cars/2024-mazda3-sedan/clear-cuts/mme_m3_sdn_bhpdeaa_46v_46v_7-8_prime.png?rnd=49b5b9"
+    ],
+    "description": "Compatta elegante con motore Skyactiv-X e design raffinato.",
+    "eletric": false,
+    "id": 33,
+    "createdAt": "2025-06-09T14:30:31.264Z",
+    "updatedAt": "2025-06-09T14:30:31.264Z"
+  },
+  {
+    "title": "Mazda 3 Skyactiv-X",
+    "category": "auto",
+    "models": "Mazda 3",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 26900,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://media-assets.mazda.eu/image/upload/q_auto,f_auto,w_768/mazdait/globalassets/cars/2024-mazda3-sedan/clear-cuts/mme_m3_sdn_bhpdeaa_46v_46v_7-8_prime.png?rnd=49b5b9"
+    ],
+    "description": "Compatta elegante con motore Skyactiv-X e design raffinato.",
+    "eletric": false,
+    "id": 34,
+    "createdAt": "2025-06-10T15:36:36.194Z",
+    "updatedAt": "2025-06-10T15:36:36.194Z"
+  },
+  {
+    "title": "Mazda 3 Skyactiv-X",
+    "category": "auto",
+    "models": "Mazda 3",
+    "YearofRegistration": 2025,
+    "condition": "nuovo",
+    "price": 26900,
+    "dayOfPublication": "2025-06-09",
+    "mileage": 0,
+    "images": [
+      "https://media-assets.mazda.eu/image/upload/q_auto,f_auto,w_768/mazdait/globalassets/cars/2024-mazda3-sedan/clear-cuts/mme_m3_sdn_bhpdeaa_46v_46v_7-8_prime.png?rnd=49b5b9"
+    ],
+    "description": "Compatta elegante con motore Skyactiv-X e design raffinato.",
+    "eletric": false,
+    "id": 35,
+    "createdAt": "2025-06-11T12:57:43.542Z",
+    "updatedAt": "2025-06-11T12:57:43.542Z"
+  }
+]
