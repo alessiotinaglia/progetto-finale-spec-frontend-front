@@ -9,16 +9,14 @@ import HomePage from './pages/HomePage'
 import DetailPage from './pages/DetailsPage'
 import FavoritesPage from './pages/FavoritesPage'
 import ComparePage from './pages/ComparePage'
-import NavBar from './pages/NavBar'
-import PageSorting from './pages/PageSorting'
+import Header from './pages/Header'
 
 
 function App() {
     return (
         <GlobalProvider>
             <BrowserRouter>
-                <NavBar />
-                <PageSorting />
+                <Header />                
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/detail/:id" element={<DetailPage />} />
