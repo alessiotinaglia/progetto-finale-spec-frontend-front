@@ -1,3 +1,6 @@
+// importo per react.memo
+import React from 'react';
+
 import { Link } from 'react-router-dom';
 import styles from './Card.module.css';
 import FavoriteStar from './FavoriteStar';
@@ -15,4 +18,4 @@ function Card({ data }) {
     );
 }
 
-export default Card;
+export default React.memo(Card);

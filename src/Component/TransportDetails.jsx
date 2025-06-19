@@ -1,3 +1,6 @@
+// importo per react.memo
+import React from 'react';
+
 import styles from './TransportDetails.module.css';
 import FavoriteStar from '../Component/FavoriteStar';
 
@@ -32,4 +35,4 @@ function TransportDetails({ transport }) {
     );
 }
 
-export default TransportDetails;
+export default React.memo(TransportDetails);

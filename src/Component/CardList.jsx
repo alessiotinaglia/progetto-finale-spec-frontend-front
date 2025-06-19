@@ -1,3 +1,6 @@
+// importo per react.memo
+import React from 'react';
+
 import Card from './Card';
 import styles from './CardList.module.css';
 
@@ -19,4 +22,4 @@ function CardList({ records }) {
     );
 }
 
-export default CardList;
+export default React.memo(CardList);

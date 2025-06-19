@@ -1,3 +1,6 @@
+// importo per react.memo
+import React from 'react';
+
 import { useContext } from 'react';
 import { GlobalContext } from '../context/GlobalContext';
 import styles from './Card.module.css';
@@ -22,4 +25,4 @@ function FavoriteStar({ data }) {
     );
 }
 
-export default FavoriteStar;
+export default React.memo(FavoriteStar);

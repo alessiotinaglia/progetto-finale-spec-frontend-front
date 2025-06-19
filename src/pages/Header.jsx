@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
-    <header className={styles.navbar}>     
+    <header className={styles.navbar}>
 
       <div className={styles.textContainer}>
         <h1 className={styles.title}>
@@ -37,7 +37,7 @@ function Header() {
             Confronta Prodotti
           </NavLink>
         </nav>
-      </div>      
+      </div>
     </header>
   );
 }

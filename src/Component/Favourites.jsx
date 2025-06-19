@@ -1,3 +1,6 @@
+// importo per react.memo
+import React from 'react';
+
 import { useContext } from 'react';
 import { GlobalContext } from '../context/GlobalContext';
 import CardList from './CardList';
@@ -20,4 +23,4 @@ function Favourites() {
     );
 }
 
-export default Favourites;
+export default React.memo(Favourites);

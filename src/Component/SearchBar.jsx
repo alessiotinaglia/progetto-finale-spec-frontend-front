@@ -1,10 +1,22 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import styles from './SearchBar.module.css';
 
 function SearchBar({ records, onSearch }) {
     const [filterTitle, setFilterTitle] = useState('');
     const [filterCategory, setFilterCategory] = useState('');
     const [alphabeticalSorting, setAlphabeticalSorting] = useState('');
+
+
+    // utilizzo della funzione debouce per non causare re rendering inutili 
+    function debounce(callback, delay) {
+        let timer;
+        return (value) => {
+            clearTimeout(timer)
+            timer = setTimeout(() => {
+                callback(value)
+            }, delay)
+        }
+    }
 
     useEffect(() => {
         let filtered = records.filter((record) => {
@@ -22,14 +34,22 @@ function SearchBar({ records, onSearch }) {
         onSearch(filtered);
     }, [filterTitle, filterCategory, alphabeticalSorting, records, onSearch]);
 
+
+    // useCallback serve per memorizzare la funzione e non ricrearla ad ogni render
+    const handleFilter = useCallback(
+        debounce((value) => {
+            setFilterTitle(value);
+        }, 1000),
+        []
+    );
+
     return (
         <div className={styles.controls}>
             <input
                 type="text"
                 placeholder="Cosa stai cercando..."
                 className={styles.input}
-                value={filterTitle}
-                onChange={(e) => setFilterTitle(e.target.value)}
+                onChange={(e) => handleFilter(e.target.value)}
             />
             <select
                 className={styles.select}

@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from 'react';
+import { createContext, useState, useEffect, useCallback } from 'react';
 
 export const GlobalContext = createContext();
 
@@ -24,7 +24,7 @@ export const GlobalProvider = ({ children }) => {
             });
     }, []);
 
-    const toggleFavorite = (record) => {
+    const toggleFavorite = useCallback((record) => {
         setFavorites((prev) => {
             if (prev.find((fav) => fav.id === record.id)) {
                 return prev.filter((fav) => fav.id !== record.id);
@@ -32,7 +32,7 @@ export const GlobalProvider = ({ children }) => {
                 return [...prev, record];
             }
         });
-    };
+    }, []);
 
     const getRecordDetails = async (id) => {
         setLoading(true);
