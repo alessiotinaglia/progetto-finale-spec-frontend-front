@@ -7,9 +7,10 @@ import TransportDetails from '../Component/TransportDetails';
 
 function DetailPage() {
 
-  const { id } = useParams();
+  const { id } = useParams(); // legge parametri dinamici dell'url 
   const { recordDetails, getRecordDetails, loading, error } = useContext(GlobalContext);
 
+  // serve per eseguire il codice dopo il re render
   useEffect(() => {
     getRecordDetails(id);
   }, [id]);

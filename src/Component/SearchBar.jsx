@@ -18,6 +18,7 @@ function SearchBar({ records, onSearch }) {
         }
     }
 
+    // viene eseguita dopo il render del componente
     useEffect(() => {
         let filtered = records.filter((record) => {
             const matchesTitle = record.title.toLowerCase().includes(filterTitle.toLowerCase());
@@ -32,6 +33,7 @@ function SearchBar({ records, onSearch }) {
         }
 
         onSearch(filtered);
+        // viene rieseguito ogni volta che una dipendenza cambia
     }, [filterTitle, filterCategory, alphabeticalSorting, records, onSearch]);
 
 

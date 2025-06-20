@@ -7,6 +7,7 @@ import styles from './Card.module.css';
 
 function FavoriteStar({ data }) {
     const { favorites, toggleFavorite } = useContext(GlobalContext);
+    // almeno uno rispetta una condizione
     const isFav = favorites.some(fav => fav.id === data.id);
 
     return (
@@ -17,7 +18,7 @@ function FavoriteStar({ data }) {
             style={{
                 cursor: 'pointer',
                 fontSize: '1.5em',
-                color: isFav ? '#FFD700' : '#ccc',                
+                color: isFav ? '#FFD700' : '#ccc',
             }}
         >
             {isFav ? '★' : '☆'}

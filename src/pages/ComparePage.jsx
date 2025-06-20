@@ -16,7 +16,7 @@ function ComparePage() {
     const [rightDetails, setRightDetails] = useState(null);
 
     // Quando records cambia di valori da dx/str
-    useEffect(() => {
+    useEffect(() => { //eseguire il codice al primo caricamento della pagina
         if (Array.isArray(records)) {
             setLeftRecords(records);
             setRightRecords(records);

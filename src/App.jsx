@@ -15,8 +15,10 @@ import Header from './pages/Header'
 function App() {
     return (
         <GlobalProvider>
+            {/* gestisce navigazione tra le pagine */}
             <BrowserRouter>
-                <Header />                
+                <Header />       
+                {/* definisce le varie rotte dell'aplicazione */}
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/detail/:id" element={<DetailPage />} />

@@ -13,22 +13,28 @@ export const GlobalProvider = ({ children }) => {
         const url = 'http://localhost:3001/transports';
         console.log('API URL:', url);
         fetch(url)
+            // convertiami i dati in json
             .then(res => res.json())
             .then(data => {
+                // stampiamo i dati 
                 console.log('Dati ricevuti:', data);
                 setRecords(data);
             })
+            // errori
             .catch(error => {
                 console.error('Errore nel fetch:', error);
                 setError("Errore nel caricamento dei dati.");
             });
-    }, []);
+    }, []); //esegue solo una volta quando il componente viene montato
 
+    // useCallback serve per memorizzare una funzione e a non ricrearla a ogni render, almeno se le dipendenze non cambiano 
     const toggleFavorite = useCallback((record) => {
         setFavorites((prev) => {
+            // controllo se e gia presente e seente lo toglie
             if (prev.find((fav) => fav.id === record.id)) {
                 return prev.filter((fav) => fav.id !== record.id);
             } else {
+                // aggiungiamo creando nuovo array + quelli gia inseriti
                 return [...prev, record];
             }
         });
@@ -53,6 +59,7 @@ export const GlobalProvider = ({ children }) => {
     };
 
     return (
+        // provider fornisce tutto hai sui figli funzioni,stato,oggetti
         <GlobalContext.Provider value={{
             records,
             setRecords,
